@@ -88,4 +88,4 @@ Contributions are welcome. If you find any issues or want to improve the code, f
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](#LICENSE.md) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/BraddlesUnravels/Knapsack-Algorithm/blob/main/LICENCE.md) file for details.
