@@ -1,0 +1,32 @@
+{
+    "compileOnSave": false,
+    "ts-node": {
+        "files": true
+    },
+    "compilerOptions": {
+        "outDir": "./build",
+        "baseUrl": ".",
+        "paths": {
+            "*": ["./node_modules/*", "*"]
+        },
+        "sourceMap": true,
+        "declaration": false,
+        "allowJs": true,
+        "module": "commonjs",
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "es6",
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "lib": [
+            "es2021",
+            "dom"
+        ]
+    },
+    "include": [
+        "./src/**/*"
+    ]
+  }
