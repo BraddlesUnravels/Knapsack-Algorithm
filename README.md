@@ -89,4 +89,3 @@ Contributions are welcome. If you find any issues or want to improve the code, f
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
