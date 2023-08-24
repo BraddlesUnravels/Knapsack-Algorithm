@@ -3,9 +3,9 @@ import { ITransaction } from "./interfaces";
 
 export default function KSAlgorithm( transactions: Array< ITransaction >, accountBalance: number ) {
     try{
-        // remove decimals as it will cause an "Invaild Array Length" error
-        const balance = accountBalance * 100;
-        transactions.map(( transaction ) => 
+        // Remove decimals as it will cause an "Invaild Array Length" error
+        const balance = Math.floor( accountBalance * 100 );
+        transactions.forEach(( transaction ) => 
             transaction.TransactionAmount = transaction.TransactionAmount * 100
         );
         const dp = Array.from({ length: transactions.length + 1 }, () =>
@@ -34,13 +34,18 @@ export default function KSAlgorithm( transactions: Array< ITransaction >, accoun
             }
             row--;
         }
-        transactions.map(( transaction ) => 
+        transactions.forEach(( transaction ) => 
             transaction.TransactionAmount = transaction.TransactionAmount / 100
         );
-        return selectTransactions
+        return selectTransactions;
     } catch ( error ) {
         console.log( `Function: KSAlgorithm. Error: ${ error }` ) // Replace with a logging function when implemented
-        
-        return error; // return empty array when error occurs
+        /*  NOTE...
+            If the error "Invalid Array Length" occurs despite the multiplication mitigation at the top of the function,
+            the cause can be the number being multiplied is to large causing a memory efficiency issue.
+            An error handling attempt can be to switch from a 2D dynamic programming array to a single dimension array 
+            and work the algorthim backwards.
+        */
+        return []; // return empty array when error occurs
     }
 }

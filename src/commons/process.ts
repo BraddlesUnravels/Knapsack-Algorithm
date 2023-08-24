@@ -48,7 +48,6 @@ export default class KSAlgorithmExample {
                 payableTransactions[ i ].balanceUsed = total;
             }
 
-
             console.log( payableTransactions );
 
             return true;

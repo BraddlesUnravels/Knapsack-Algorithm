@@ -15,7 +15,7 @@ This repository contains a TypeScript implementation showcasing the Knapsack alg
 
 ## Introduction
 
-The Knapsack algorithm is a classic optimization problem used to solve problems like selecting items to maximize value without exceeding a given capacity. In this repository, we apply the Knapsack algorithm to select transactions that yield the highest value without exceeding individual account balances.
+The Knapsack algorithm is a classic optimization problem used to solve problems like selecting items to maximize value without exceeding a given capacity. In this repository, the Knapsack algorithm is applied to select transactions that yield the highest value without exceeding individual account balances.
 
 ## Usage
 
@@ -84,7 +84,7 @@ To run this example on your local machine, follow these steps:
 
 ## Contributing
 
-Contributions are welcome. If you find any issues or want to improve the code, feel free to create a pull request. Please follow the existing coding style and conventions.
+This repository is mainly to show an implementation example and is ment to be customised to any specific use case. However contributions are welcome. If you find any issues or want to improve the code, feel free to create a pull request. Please follow the existing coding style and conventions.
 
 ## License
 
